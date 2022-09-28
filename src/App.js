@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Watermark from '@uiw/react-watermark';
 
-function App() {
+const style = { width: '100%', maxWidth: '100%', height: 400, display: 'block' };
+const text = `React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+
+Declarative views make your code more predictable and easier to debug.`;
+
+//Return everything insite watermark
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Watermark
+      content="UIW Watermark"
+      style={{}}
+    >
+      <div>
+         <h1>Sanket bhutani</h1>
+
+         <h1>Sanket bhutani</h1>
+         <h1>Sanket bhutani</h1>
+         <h1>Sanket bhutani</h1>
+         <h1>Sanket bhutani</h1>
+         <h1>Sanket bhutani</h1>
+      </div>
+    </Watermark>
   );
 }
-
-export default App;
